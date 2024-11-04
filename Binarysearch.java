@@ -9,17 +9,17 @@ public class Binarysearch{
         for(int i=0;i<n;i++){
             arr[i]=scanner.nextInt();
         }
-        int key=7,s=0,e=arr.length-1,t=0;
+        int key=7,s=0,e=arr.length-1,c=0;
             while (s <= e) {
                 int m = (s + e) / 2;
                 if (arr[m] == key) {
-                    t++; 
+                    c++; 
                     break;
                 } 
                 else if (arr[m] < key) s = m + 1; 
                 else  e = m - 1; 
             }
-        if(t>0) System.out.println("The element is present in the array");
+        if(c>0) System.out.println("The element is present in the array");
         else System.out.println("The element is not present in the array");  
 }
 }
