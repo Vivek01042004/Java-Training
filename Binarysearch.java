@@ -11,15 +11,13 @@ public class Binarysearch{
         }
         int key=7,s=0,e=arr.length-1,t=0;
             while (s <= e) {
-                int mid = (s + e) / 2;
-                if (arr[mid] == key) {
+                int m = (s + e) / 2;
+                if (arr[m] == key) {
                     t++; 
                     break;
-                } else if (arr[mid] < key) {
-                    s = mid + 1; 
-                } else {
-                    e = mid - 1; 
-                }
+                } 
+                else if (arr[m] < key) s = m + 1; 
+                else  e = m - 1; 
             }
         if(t>0) System.out.println("The element is present in the array");
         else System.out.println("The element is not present in the array");  
